@@ -74,4 +74,19 @@
         This password must match the <strong>entered above</strong>!
       </mat-error>
       <mat-error
-        *ngIf="signupForm.get('confirmPassword')?.ha
+        *ngIf="signupForm.get('confirmPassword')?.hasError('required')"
+      >
+        Password is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+  </p>
+
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    [disabled]="!signupForm.valid"
+  >
+    Signup
+  </button>
+</form>
