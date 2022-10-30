@@ -1,2 +1,14 @@
 <mat-card appearance="outlined">
-  <mat-ca
+  <mat-card-header>
+    <mat-card-title>{{ coinOfTheDay?.symbol }}</mat-card-title>
+    <mat-card-subtitle>{{ coinOfTheDay?.name }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    src="https://images.unsplash.com/photo-1631603090989-93f9ef6f9d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
+    alt="Unplash crypto pic"
+  />
+  <mat-card-content>
+    The coin of the day is: <strong>{{ coinOfTheDay?.name }}</strong>
+  </mat-card-content>
+</mat-card>
