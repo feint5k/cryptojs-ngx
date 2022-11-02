@@ -16,4 +16,10 @@ describe('PageNotFoundComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(PageNotFoundComponent);
     component = fixture.componentInstance;
-    fixture.detectC
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
